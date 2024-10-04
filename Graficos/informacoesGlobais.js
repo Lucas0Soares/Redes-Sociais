@@ -8,7 +8,7 @@ async function visualizarInformacoesGlobais() {
     const horas = parseInt(dados.tempo_medio)
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
-    paragrafo.innerHTML = `Você sabia que o mundo tem <span> ${pessoasNoMundo} Bilhões </span> de pessoas e que aproximadamente <span> ${pessoasConectadas} Bilhões </span> estão conectadas em alguma rede social e passam em média <span> ${horas}hrs </span> conectadas.`
+    paragrafo.innerHTML = `Você sabia que o mundo tem <span> ${pessoasNoMundo} Bilhões </span> de pessoas e que aproximadamente <span> ${pessoasConectadas} Bilhões </span> estão conectadas em alguma rede social e passam em média <span> ${horas} horas </span> conectadas.`
     const container = document.getElementById('graficos-container')
     container.appendChild(paragrafo)
     
