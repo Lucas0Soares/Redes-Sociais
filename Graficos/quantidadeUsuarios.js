@@ -9,6 +9,9 @@ async function quantidadeUsuariosPorRede() {
            x : nomeDasRedes,
            y : quantidadeUsuarios,
            type: 'bar' 
+           maker: {
+            color: getComputedStyle{document.body}.getpor
+           }
         }
     ]
     const grafico = document.createElement('div')
