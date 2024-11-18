@@ -1,3 +1,4 @@
 const getCSS = (variantes) => {
-    return
+    return getComputedStyle(document.body).getPropertyValue(variavel)
 }
+export {getCSS}
