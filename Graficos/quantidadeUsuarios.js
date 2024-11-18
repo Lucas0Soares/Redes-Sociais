@@ -9,9 +9,9 @@ async function quantidadeUsuariosPorRede() {
         {
            x : nomeDasRedes,
            y : quantidadeUsuarios,
-           type: 'bar' 
+           type: 'bar', 
            maker: {
-            color: getComputedStyle{document.body}.getpor
+            color: getCSS('--primary-color')
            }
         }
     ]
@@ -21,5 +21,9 @@ async function quantidadeUsuariosPorRede() {
         Plotly.newPlot(grafico, data)
     
     console.log(dados)
+    const layout = {
+        plot_bgcolor: getCSS('--bg-color'),
+        paper_bgcolor: getCSS('--bg-color')
+    }
 }
-quantidadeUsuariosPorRede()
+quantidadeUsuarios()
